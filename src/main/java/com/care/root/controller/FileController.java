@@ -75,7 +75,7 @@ public class FileController {
 	@PostMapping("modify")
 	public String modify(@RequestParam String id, @RequestParam String name, 
 							@RequestParam MultipartFile file) {
-		fs.modify(id, name, file);
+		fs.modify( id, name, file);
 		return "redirect:views";
 	}
 	
